@@ -1,8 +1,3 @@
-echo "__pycache__/
-*.pyc
-*.pyo
-.DS_Store" > .gitignore
-
-git add .gitignore
-git commit -m "Add .gitignore file"
-git push
+#該專案由虎尾科大電子系智慧型視覺運算實驗室𝑰𝒏𝒕𝒆𝒍𝒍𝒊𝒈𝒆𝒏𝒕 𝑽𝒊𝒔𝒊𝒐𝒏 𝑪𝒐𝒎𝒑𝒖𝒕𝒊𝒏𝒈 𝑳𝒂𝒃𝒐𝒓𝒂𝒕𝒐𝒓𝒚建置
+#於2024年8月31號開始建置部屬
+#目前處於開發試驗階段
