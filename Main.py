@@ -89,8 +89,12 @@ def main():
             cv2.circle(img, (abs_icx, abs_icy), ir, (0, 0, 255), 2)  # 內圓 (紅色)
             cv2.circle(img, (abs_icx, abs_icy), 3, (0, 255, 255), -1)  # 內圓中心 (黃色)
 
-            cv2.putText(img, f"Pipe{pipe_id} In:{2*ir}px", (abs_icx+5, abs_icy),
-                        cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 255, 255), 1)
+            inner_diameter = 2 * ir
+            outer_diameter = 2 * r_outer
+            cv2.putText(img, f"Pipe {pipe_id}", (x1, y1 - 10),
+            cv2.FONT_HERSHEY_SIMPLEX, 0.6, (0, 255, 0), 2)
+            # 終端輸出內徑與外徑
+            print(f"Pipe{pipe_id}: Inner Diameter = {inner_diameter}px, Outer Diameter = {outer_diameter}px ({method_used})")
 
     cv2.imshow("Result", img)
     cv2.waitKey(0)
