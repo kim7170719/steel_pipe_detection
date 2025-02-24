@@ -49,7 +49,7 @@ def detect_inner_circle_by_thresholding(roi, outer_circle):
 def main():
     model = YOLO("yolov8-steel-pipe model.pt")
 
-    img = cv2.imread("IMG_3830.JPG")
+    img = cv2.imread("IMG_3836.JPG")
     if img is None:
         print("無法讀取影像。")
         return
